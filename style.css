@@ -39,3 +39,51 @@ body{
     border-radius: 15px;
 }
 
+.result {
+    color:red;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.song-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: 50%;
+    transform:translate(-50%,0);
+}
+
+.song-list li {
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: space-evenly;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline;
+}
+
+.song-list li::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    left: -20px;
+    bottom: -4px;
+    height: 3px;
+    background:rgb(12,147,100);
+    display: inline-block;
+}
+
+.song-list li span {
+    float: right;
+    background-color: #9E2093;
+    border: none;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
